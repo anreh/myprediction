@@ -4,11 +4,13 @@ import streamlit as st
 import shap
 import pandas as pd
 import numpy as np
+import openai
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report
 import matplotlib.pyplot as plt
 from streamlit_shap import st_shap
+
 
 # Load the dataset (assuming it's in the same directory)
 customer = pd.read_csv("Customer Churn.csv")
